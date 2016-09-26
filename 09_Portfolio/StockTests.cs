@@ -96,18 +96,18 @@ namespace _09_Portfolio
             Assert.IsTrue(abc2.Equals(abc1));
         }
 
-        [TestMethod]
-        public void TwoStockObjectsWithDifferentValuesAreNotEqual()
-        {
-            Stock stock1 = new Stock("ABC", 12.23, 50);
-            Stock stock2 = new Stock("XYZ", 12.23, 50);
-            Stock stock3 = new Stock("ABC", 45.67, 50);
-            Stock stock4 = new Stock("ABC", 12.23, 60);
+        //[TestMethod]
+        //public void TwoStockObjectsWithDifferentValuesAreNotEqual()
+        //{
+        //    Stock stock1 = new Stock("ABC", 12.23, 50);
+        //    Stock stock2 = new Stock("XYZ", 12.23, 50);
+        //    Stock stock3 = new Stock("ABC", 45.67, 50);
+        //    Stock stock4 = new Stock("ABC", 12.23, 60);
 
-            Assert.IsTrue(!stock1.Equals(stock2));
-            Assert.IsTrue(!stock1.Equals(stock3));
-            Assert.IsTrue(!stock1.Equals(stock4));
-        }
+        //    Assert.IsTrue(!stock1.Equals(stock2));
+        //    Assert.IsTrue(!stock1.Equals(stock3));
+        //    Assert.IsTrue(!stock1.Equals(stock4));
+        //}
 
 
     }
