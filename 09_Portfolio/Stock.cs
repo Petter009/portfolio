@@ -11,6 +11,7 @@ namespace _09_Portfolio
             symbol = v1;
             pricepershare = v2;
             numshares = v3;
+                  
         }
 
         private string symbol;
@@ -48,7 +49,26 @@ namespace _09_Portfolio
         }
         public override string ToString()
         {
-            return "Stock[symbol=" + symbol + ",pricePerShare=" + pricepershare + ",numShares=" + numshares +"]";
+            return "Stock[symbol=" + symbol + ",pricePerShare=" + pricepershare.ToString().Replace(',','.') + ",numShares=" + numshares +"]";
         }
+        public override bool Equals(Object o)
+        {
+            if (o is Stock)
+            {
+                Stock s = (Stock)o;
+                if (symbol == s.Symbol && pricepershare == s.PricePerShare && numshares == s.NumShares)
+                { return true; }
+                else
+                    return false;
+            }
+            else
+                return false;
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
     }
+    
 }
