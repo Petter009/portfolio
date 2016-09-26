@@ -8,30 +8,30 @@ namespace _09_Portfolio
 
     //THESE ARE THE SECOND TESTS YOU SHOULD DO 
 
-//    [TestClass]
-//    public class PolymorphismTests
-//    {
+    [TestClass]
+    public class PolymorphismTests
+    {
 
 
-//        Stock stockHP = new Stock("HPQ", 60.03, 120);
-//        Stock stockIBM = new Stock("IBM", 32.11, 50);
+        Stock stockHP = new Stock("HPQ", 60.03, 120);
+        Stock stockIBM = new Stock("IBM", 32.11, 50);
 
 
-//        [TestMethod]
-//        public void InstanceOf()
-//        {
-//            Assert.IsTrue(stockHP is Asset);
-//        }
+        [TestMethod]
+        public void InstanceOf()
+        {
+            Assert.IsTrue(stockHP is IAsset);
+        }
 
-//        [TestMethod]
-//        public void CD()
-//        {
-//            SavingsAccount cd = new SavingsAccount("Account 55555", 1000, 4.2);
-//            Assert.IsTrue(cd is Asset);
-//            Assert.AreEqual("SavingsAccount[value=1000.0,interestRate=4.2]", cd.ToString());
-//            Assert.AreEqual(1000, cd.GetValue());
-//            Assert.AreEqual(4.2, cd.InterestRate);
-//        }
+        [TestMethod]
+        public void CD()
+        {
+            SavingsAccount cd = new SavingsAccount("Account 55555", 1000, 4.2);
+            Assert.IsTrue(cd is IAsset);
+            Assert.AreEqual("SavingsAccount[value=1000.0,interestRate=4.2]", cd.ToString());
+            Assert.AreEqual(1000, cd.GetValue());
+            Assert.AreEqual(4.2, cd.InterestRate);
+        }
 
 //        [TestMethod]
 //        public void CDInterest()
@@ -55,5 +55,6 @@ namespace _09_Portfolio
 //        }
 
 
-//    }
+    }
+
 }

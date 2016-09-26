@@ -2,7 +2,7 @@
 
 namespace _09_Portfolio
 {
-    public class Stock
+    public class Stock : IAsset
     {
         public Stock()  { }
 
