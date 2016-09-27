@@ -27,12 +27,17 @@ namespace _09_Portfolio
 
         public override string ToString()
         {
-            return "SavingsAccount[value=" + value + ",interestRate=" + interestRate.ToString().Replace(',', '.') + "]";
+            return "SavingsAccount[value=" + value.ToString("F1").Replace(',','.') + ",interestRate=" + interestRate.ToString().Replace(',', '.') + "]";
         }
 
         public double GetValue()
         {
-            return v2 ;
+            return value ;
+        }
+
+        internal void ApplyInterest()
+        {
+            throw new NotImplementedException();
         }
     }
 }

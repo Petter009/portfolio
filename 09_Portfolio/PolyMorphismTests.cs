@@ -33,14 +33,14 @@ namespace _09_Portfolio
             Assert.AreEqual(4.2, cd.InterestRate);
         }
 
-//        [TestMethod]
-//        public void CDInterest()
-//        {
-//            SavingsAccount cd = new SavingsAccount("Account 55555", 1000, 4.2);
-//            Assert.AreEqual(1000, cd.GetValue());
-//            cd.ApplyInterest();
-//            Assert.AreEqual(1042, cd.GetValue());
-//        }
+        [TestMethod]
+        public void CDInterest()
+        {
+            SavingsAccount cd = new SavingsAccount("Account 55555", 1000, 4.2);
+            Assert.AreEqual(1000, cd.GetValue());
+            cd.ApplyInterest();
+            Assert.AreEqual(1042, cd.GetValue());
+        }
 
 //        [TestMethod]
 //        public void PolymorphismArray()
