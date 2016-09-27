@@ -70,7 +70,7 @@ namespace _09_Portfolio
             double result = 0;
             foreach (var Asset in portfolio)
             {
-                return result += Asset.GetValue();
+                result += Asset.GetValue();
             }
             return result;
         }
