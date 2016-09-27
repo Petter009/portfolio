@@ -37,7 +37,8 @@ namespace _09_Portfolio
 
         internal void ApplyInterest()
         {
-            throw new NotImplementedException();
+          value = value * (interestRate / 100 + 1);
         }
+
     }
 }

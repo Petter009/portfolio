@@ -64,6 +64,17 @@ namespace _09_Portfolio
             else
                 return false;
         }
+
+        public static object TotalValue(IAsset[] portfolio)
+        {
+            double result = 0;
+            foreach (var Asset in portfolio)
+            {
+                return result += Asset.GetValue();
+            }
+            return result;
+        }
+
         public override int GetHashCode()
         {
             return base.GetHashCode();

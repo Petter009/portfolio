@@ -42,17 +42,17 @@ namespace _09_Portfolio
             Assert.AreEqual(1042, cd.GetValue());
         }
 
-//        [TestMethod]
-//        public void PolymorphismArray()
-//        {
-//            SavingsAccount cd = new SavingsAccount("Account 55555", 1000, 3.2);
+        [TestMethod]
+        public void PolymorphismArray()
+        {
+            SavingsAccount cd = new SavingsAccount("Account 55555", 1000, 3.2);
 
-//            Asset[] portfolio = new Asset[3];
-//            portfolio[0] = stockHP;
-//            portfolio[1] = stockIBM;
-//            portfolio[2] = cd;
-//            Assert.AreEqual(9809.1, Stock.TotalValue(portfolio));
-//        }
+            IAsset[] portfolio = new IAsset[3];
+            portfolio[0] = stockHP;
+            portfolio[1] = stockIBM;
+            portfolio[2] = cd;
+            Assert.AreEqual(9809.1, Stock.TotalValue(portfolio));
+        }
 
 
     }
